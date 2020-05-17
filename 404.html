@@ -5,9 +5,8 @@
     <meta charset="utf-8">
     <title>AngularBookKeeping</title>
     <script type="text/javascript">
-        const path = window.location.pathname.slice(2);
-        console.log(window);
-        debugger;
+        const basePath = '/pwa-demo'; // put your base path to be truncated
+        const path = window.location.pathname.replace(basePath,'');
         localStorage.setItem('path', path);
         window.location.href = './';
     </script>
