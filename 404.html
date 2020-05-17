@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>AngularBookKeeping</title>
     <script type="text/javascript">
-        const path = window.location.pathname.slice(1);
+        const path = window.location.pathname.slice(2);
+        console.log(window);
         localStorage.setItem('path', path);
         window.location.href = './';
     </script>
